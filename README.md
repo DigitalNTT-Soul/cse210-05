@@ -49,7 +49,7 @@ Python 3.10.4
 
 ## Authors
 ---
-* Dylan Ruppell (ruppelld@byui.edu) (github: DigitalNTT-Soul)
-* Austin Donovan (iskarr9g@gmail.com) (github: lskarr)
-* Matt Pellét (mattpellet@byui.edu) (github: m4j0rCSE)
+* Dylan Ruppell (ruppelld@byui.edu) (github: DigitalNTT-Soul): Program design
+* Austin Donovan (iskarr9g@gmail.com) (github: lskarr): ASCII Parachute
+* Matt Pellét (mattpellet@byui.edu) (github: m4j0rCSE): Word list, README
 * Larry Brys (bry21010@byui.edu) (github: ljbrys)
