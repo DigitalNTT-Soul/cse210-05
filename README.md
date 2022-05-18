@@ -39,6 +39,11 @@ The goal of the game is to guess the secret word before you run out of parachute
 root                    (project root folder)
 +-- jumper              (source code for game)
   +-- game              (specific classes)
+    +-- director.py     (director class script)
+    +-- rules.py        (rules class script)
+    +-- ui.py           (ui class script)
+    +-- word_list.py    (word_list class script)
+    +-- word_list.txt   (raw text file of words, for easy editing)
   +-- __main__.py       (program entry point)
 +-- README.md           (general info)
 ```
