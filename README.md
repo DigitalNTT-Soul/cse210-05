@@ -1,5 +1,8 @@
 # Jumper
+"There are old skydivers and bold skydivers, but there are no old, bold skydivers." - Jeff Wuorio 
+
 ---
+Jumper is a game in which the player seeks to solve a puzzle by guessing the letters of a secret word one at a time. Guess the correct letters of the secret word before all of the lines of the parachute are cut!
 
 
 ## Getting Started
