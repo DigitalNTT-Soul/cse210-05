@@ -14,11 +14,13 @@ python3 jumper
 
 ## Project Structure
 ---
+```
 root                    (project root folder)
 +-- jumper              (source code for game)
   +-- game              (specific classes)
   +-- __main__.py       (program entry point)
 +-- README.md           (general info)
+```
 
 ## Required Technologies
 ---
