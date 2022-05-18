@@ -15,6 +15,24 @@ browse to the project's root folder. Start the program by running the following 
 python3 jumper
 ```
 
+You can also run the program from an IDE like Visual Studio Code. Start your IDE and open the
+project folder. Select the main module inside the hilo folder and click the "run" button.
+
+There are some rules to this game and are listed as follows:
+
+- The secret word is reandoly chosen from a list.
+- The player guesses a letter in the puzzle.
+- If the guess is correct, the letter is revealed.
+- The player guesses if the next one will be higher or lower.
+- If the guess is incorrect, a line is cut on the player's parachute
+- If the puzzle is solved the game is over. You landed safely on the ground!
+- If the player has no more parachute, well, the game is over. Its a pretty long way to the ground...
+
+
+The goal of the game is to guess the secret word before you run out of parachute.
+
+
+
 ## Project Structure
 ---
 ```
