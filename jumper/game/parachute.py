@@ -2,7 +2,7 @@ class Parachute:
     def __init__(self):
         self.welcome = "Welcome to Parachute"
         self.parachute_dude = [' ___', '/___\ ', '\   / ', ' \ / ',
-                               '  O ', ' /|\ ', ' / \ ', '      ', '^^^^^^ ' ]
+                               '  O ', ' /|\ ', ' / \ ', '      ', '^^^^^^ ']
 
     def parachute_guy(self):
         print(self.welcome)
@@ -12,3 +12,4 @@ class Parachute:
 
 parachute = Parachute()
 parachute.parachute_guy()
+
