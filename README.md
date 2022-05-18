@@ -39,6 +39,11 @@ The goal of the game is to guess the secret word before you run out of parachute
 root                    (project root folder)
 +-- jumper              (source code for game)
   +-- game              (specific classes)
+    +-- director.py     (director class script)
+    +-- rules.py        (rules class script)
+    +-- ui.py           (ui class script)
+    +-- word_list.py    (word_list class script)
+    +-- word_list.txt   (raw text file of words, for easy editing)
   +-- __main__.py       (program entry point)
 +-- README.md           (general info)
 ```
@@ -50,6 +55,11 @@ Python 3.10.4
 ## Authors
 ---
 * Dylan Ruppell (ruppelld@byui.edu) (github: DigitalNTT-Soul): Program design
+<<<<<<< HEAD
 * Austin Donovan (iskarr9g@gmail.com) (github: lskarr): ASCII Parachute Design, Parachute Class, Parachute guy function
 * Matt Pellét (mattpellet@byui.edu) (github: m4j0rCSE): Word list, README, Word List Class
+=======
+* Austin Donovan (iskarr9g@gmail.com) (github: Iskarr): ASCII Parachute Design, Parachute Class, Parachute guy function
+* Matt Pellét (mattpellet@byui.edu) (github: m4j0rCSE): Word list, README
+>>>>>>> ccfea5e57e6e786850288563f2c82f90b1e72f9c
 * Larry Brys (bry21010@byui.edu) (github: ljbrys)
