@@ -20,7 +20,7 @@ project folder. Select the main module inside the hilo folder and click the "run
 
 There are some rules to this game and are listed as follows:
 
-- The secret word is reandoly chosen from a list.
+- The secret word is randomly chosen from a list.
 - The player guesses a letter in the puzzle.
 - If the guess is correct, the letter is revealed.
 - The player guesses if the next one will be higher or lower.
