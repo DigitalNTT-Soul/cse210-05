@@ -1,4 +1,4 @@
-# Seeker
+# Jumper
 ---
 
 
@@ -9,13 +9,13 @@ Make sure you have Python 3.10.4 or newer installed and running on your machine.
 browse to the project's root folder. Start the program by running the following command.
 
 ```
-python3 seeker
+python3 jumper
 ```
 
 ## Project Structure
 ---
 root                    (project root folder)
-+-- seeker              (source code for game)
++-- jumper              (source code for game)
   +-- game              (specific classes)
   +-- __main__.py       (program entry point)
 +-- README.md           (general info)
