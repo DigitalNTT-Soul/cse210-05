@@ -57,4 +57,4 @@ Python 3.10.4
 * Dylan Ruppell (ruppelld@byui.edu) (github: DigitalNTT-Soul): Program design
 * Austin Donovan (iskarr9g@gmail.com) (github: Iskarr): ASCII Parachute Design, Parachute Class, Parachute guy function
 * Matt Pellét (mattpellet@byui.edu) (github: m4j0rCSE): Word list, README, word_list class
-* Larry Brys (bry21010@byui.edu) (github: ljbrys)
+* Larry Brys (bry21010@byui.edu) (github: ljbrys) collaborated with design
