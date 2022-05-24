@@ -41,4 +41,6 @@ class User_input:
 
     def update_lists(self):
         self.guessed_letters.append(self.user_guess)
+        self.guessed_letters.sort()
         self.not_guessed_letters.remove(self.user_guess)
+        self.user_guess = ""
