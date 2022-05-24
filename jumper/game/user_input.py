@@ -9,7 +9,9 @@ class User_input:
         guessed_letters (list)      : The letters that the user has guess in lowercase format
         not_guessed_letters (list)  : The letters of the alphabet that have not been guessed yet - in lower case format
 
-
+    Methods:
+        get_input (self) :          Get the guessed letter from the user, makes sure it is a valid guess then stores it in guessed letter
+        update_lists (self) :       Updates the guessed_letters list, the not_guessed_letters, and updates gueseed letter to an empty string   
     """
 
     def __init__(self):
