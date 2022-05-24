@@ -69,4 +69,4 @@ class User_input:
             elif user_response.lower() == "n":
                 return False
             else:
-                print("I am sorry that was not a vlid response please respond y or n")
+                print("I am sorry that was not a valid response please respond y or n")
