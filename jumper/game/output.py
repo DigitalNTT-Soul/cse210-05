@@ -1,6 +1,6 @@
 class Output:
     def __init__(self):
-        self._welcome = "_welcome to Jumper"
+        self._welcome = "Welcome to Jumper"
         self._parachute_dude = [' ___', '/___\ ', '\   / ', ' \ / ',
                                '  O ', ' /|\ ', ' / \ ', '      ', '^^^^^^ ']
         self._displayed_letters = "_____"
@@ -10,14 +10,14 @@ class Output:
         for lines in self._parachute_dude:
             print(lines)
 
-    def set_correct_letter(self, single_char, index):
+    def set_correct_letter(self, user_guess, index):
         if index is list:
             for i in index:
-                self._displayed_letters[i] = single_char
+                self._displayed_letters[i] = user_guess
         else:
-            self._displayed_letters[index] = single_char
+            self._displayed_letters[index] = user_guess
 
-    def reset__displayed_letters(self):
+    def reset_displayed_letters(self):
         self._displayed_letters = "_____"
 
     def display(self, missed_guesses):
