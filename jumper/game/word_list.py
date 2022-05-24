@@ -1,4 +1,5 @@
 import random
+import os
 
 class Word_list:
     """
@@ -15,7 +16,11 @@ class Word_list:
         self._file = None
         self._lines = None
 
-        with open('word_list.txt') as self._file:
+        # get path to the word_list.txt file
+        path_to_here = os.path.abspath(__file__)
+        path_to_list = os.path.join(os.path.dirname(path_to_here), 'word_list.txt')
+
+        with open(path_to_list, 'r') as self._file:
             self._lines = self._file.read().splitlines()
     
     def get_random_word(self):
