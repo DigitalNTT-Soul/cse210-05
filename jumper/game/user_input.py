@@ -18,7 +18,6 @@ class User_input:
     def __init__(self):
         self.user_guess = ""
         self.guessed_letters = []
-        self.not_guessed_letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
         self._word = ""
 
     def get_input(self):
@@ -33,7 +32,7 @@ class User_input:
             if lowercase_input in self.guessed_letters:
                 print("I am sorry you have already guessed this letter, please guess again ")
 
-            elif lowercase_input in self.not_guessed_letters:
+            elif lowercase_input.isalpha() and len(lowercase_input) == 1:
                 self.user_guess = lowercase_input
                 guess_continue = False
 
@@ -46,7 +45,6 @@ class User_input:
     def update_lists(self):
         self.guessed_letters.append(self.user_guess)
         self.guessed_letters.sort()
-        self.not_guessed_letters.remove(self.user_guess)
         self.user_guess = ""
 
     def check_guess_in_word(self, letter):
@@ -54,7 +52,7 @@ class User_input:
         indices = []
         for i in range(len(self._word)):
             if self._word[i] == letter:
-                indices.append[i]
+                indices.append(i)
 
         return match_count, indices
 
@@ -70,3 +68,6 @@ class User_input:
                 return False
             else:
                 print("I am sorry that was not a valid response please respond y or n")
+
+    def reset_guessed_letters(self):
+        self.guessed_letters = []
