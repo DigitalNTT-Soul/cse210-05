@@ -11,11 +11,12 @@ class Output:
             print(lines)
 
     def set_correct_letter(self, user_guess, index):
-        if index is list:
-            for i in index:
-                self._displayed_letters[i] = user_guess
-        else:
-            self._displayed_letters[index] = user_guess
+        listified = list(self._displayed_letters)
+        
+        for i in index:
+            listified[i] = user_guess
+
+        self._displayed_letters = listified
 
     def reset_displayed_letters(self):
         self._displayed_letters = "_____"
@@ -29,3 +30,9 @@ class Output:
                 else:
                     print(self._parachute_dude[i])
                     
+    def display_game_over(self, hits, misses):
+        self.display(misses)
+        if hits == 5 and misses < 4:
+            print("You Won! Congratulations!")
+        else:
+            print("Sorry, you didn't guess the word in time. GAME OVER.")
