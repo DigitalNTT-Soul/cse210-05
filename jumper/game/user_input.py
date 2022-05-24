@@ -18,7 +18,18 @@ class User_input:
         self.not_guessed_letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
     def get_input(self):
-        pass
+        guess_continue = True
+        while guess_continue:
+            temp_input = input(f"Guess a letter [a-z]: ")
+            lowercase_input  = temp_input.lower()
+            in_guessed_letters = False
+            in_not_guess_letters = False
+
+            if lowercase_input in self.guessed_letters:
+                print("I am sorry you have already guessed this letter, please guess again ")
+            elif lowercase_input in self.not_guessed_letters:
+                
+
 
     def update_lists(self):
         pass
