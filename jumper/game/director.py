@@ -8,6 +8,7 @@ class Director:
         self._output = Output()
         self._word_list = Word_list()
         self._missed_guesses = 0
+        self._hit_guesses = 0
         self._guess = ""
         self._play_new_round = True
 
@@ -15,7 +16,7 @@ class Director:
         while True:
             self._input.set_word(self._word_list.get_random_word())
             self._output.reset_displayed_letters()
-            while self._play_new_round and self._missed_guesses < 4:
+            while self._hit_guesses < 5 and self._missed_guesses < 4:
                 # Display gamestate
                 self._output.display(self._missed_guesses)
 
@@ -24,6 +25,7 @@ class Director:
                 
                 # See if user's guess was correct (function should return number of matches and list of match indices)
                 match_count, indices = self._input.validate(self._guess)
+                self._hit_guesses += match_count
 
                 if match_count == 0:
                     self._missed_guesses += 1
