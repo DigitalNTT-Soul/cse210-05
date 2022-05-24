@@ -2,7 +2,7 @@ import csv
 import random
 
 class word_list:
-    def word_list(self):
+    def random_words(self):
         with open('word_list.csv') as word_list_file :
          word_reader = csv.reader(word_list_file)
     
