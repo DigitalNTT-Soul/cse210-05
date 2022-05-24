@@ -18,7 +18,7 @@ class User_input:
         self.user_guess = ""
         self.guessed_letters = []
         self.not_guessed_letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-        self._word() = ""
+        self._word = ""
 
     def get_input(self):
         guess_continue = True
