@@ -57,3 +57,16 @@ class User_input:
                 indices.append[i]
 
         return match_count, indices
+
+    def set_word(self,word):
+        self._word = word
+
+    def prompt_play_again(self):
+        while True:
+            user_response = input(f"would you like to play the game again? (y or n): ")
+            if user_response.lower() == "y":
+                return True
+            elif user_response.lower() == "n":
+                return False
+            else:
+                print("I am sorry that was not a vlid response please respond y or n")
