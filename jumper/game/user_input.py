@@ -22,13 +22,19 @@ class User_input:
         while guess_continue:
             temp_input = input(f"Guess a letter [a-z]: ")
             lowercase_input  = temp_input.lower()
-            in_guessed_letters = False
-            in_not_guess_letters = False
+
 
             if lowercase_input in self.guessed_letters:
                 print("I am sorry you have already guessed this letter, please guess again ")
+
             elif lowercase_input in self.not_guessed_letters:
-                
+                self.user_guess = lowercase_input
+                guess_continue = False
+
+            else:
+                print("You have not entered a valid letter, please enter a single letter guess")
+            
+
 
 
     def update_lists(self):
