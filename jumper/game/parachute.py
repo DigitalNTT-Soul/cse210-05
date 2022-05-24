@@ -9,6 +9,9 @@ class Parachute:
         for lines in self.parachute_dude:
             print(lines)
 
+    def remove_line(self):
+        print("update this later.")
+
 
 parachute = Parachute()
 parachute.parachute_guy()
