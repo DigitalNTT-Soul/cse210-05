@@ -8,6 +8,7 @@ class User_input:
         user_guess (str)            : The guess from the user - a string length 1
         guessed_letters (list)      : The letters that the user has guess in lowercase format
         not_guessed_letters (list)  : The letters of the alphabet that have not been guessed yet - in lower case format
+        _word (string)              : Five letter word passed in from director
 
     Methods:
         get_input (self) :          Get the guessed letter from the user, makes sure it is a valid guess then stores it in guessed letter
