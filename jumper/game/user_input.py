@@ -51,7 +51,6 @@ class User_input:
     def check_guess_in_word(self, letter):
 	    match_count = self._word.count(letter)
 	    indices = []
-
 	    for i in range(len(self._word)):
 		    if self._word[i] == letter:
 			    indices.append[i]
