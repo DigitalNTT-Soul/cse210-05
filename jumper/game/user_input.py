@@ -19,6 +19,8 @@ class User_input:
 
     def get_input(self):
         guess_continue = True
+
+
         while guess_continue:
             temp_input = input(f"Guess a letter [a-z]: ")
             lowercase_input  = temp_input.lower()
@@ -38,4 +40,5 @@ class User_input:
 
 
     def update_lists(self):
-        pass
+        self.guessed_letters.append(self.user_guess)
+        self.not_guessed_letters.remove(self.user_guess)
