@@ -70,4 +70,5 @@ Python 3.10.4
   - advisory role in other code
 * Larry Brys (bry21010@byui.edu) (github: ljbrys)
   - User Input class
+  - User Input class documentation
   - advisory role in other code
