@@ -40,7 +40,8 @@ root                    (project root folder)
 +-- jumper              (source code for game)
   +-- game              (specific classes)
     +-- director.py     (director class script)
-    +-- ui.py           (ui class script)
+    +-- user_input.py   (user_input class script)
+    +-- output.py       (output class script)
     +-- word_list.py    (word_list class script)
     +-- word_list.txt   (raw text file of words, for easy editing)
   +-- __main__.py       (program entry point)
@@ -51,9 +52,22 @@ root                    (project root folder)
 ---
 Python 3.10.4
 
-## Authors
+## Authors and Credits
 ---
-* Dylan Ruppell (ruppelld@byui.edu) (github: DigitalNTT-Soul): Program design
-* Austin Donovan (iskarr9g@gmail.com) (github: Iskarr): ASCII Parachute Design, Parachute Class, Parachute guy function
-* Matt Pellét (mattpellet@byui.edu) (github: m4j0rCSE): Word list, README, word_list class
-* Larry Brys (bry21010@byui.edu) (github: ljbrys) collaborated with design
+* Dylan Ruppell (ruppelld@byui.edu) (github: DigitalNTT-Soul)
+  - Program design
+  - main gameplay loop in Director class
+  - advisory role in other code
+  - Final documentation pass
+* Austin Donovan (iskarr9g@gmail.com) (github: Iskarr)
+  - ASCII art Parachute Design
+  - Output class
+  - Output class documentation
+  - advisory role in other code
+* Matt Pellét (mattpellet@byui.edu) (github: m4j0rCSE)
+  - Word List class
+  - README (especially the game descriptions and rules from the top of this document)
+  - advisory role in other code
+* Larry Brys (bry21010@byui.edu) (github: ljbrys)
+  - User Input class
+  - advisory role in other code
