@@ -13,8 +13,11 @@ class Word_list:
         get_random_word(self)       returns whole word as a string.
     """
     def __init__(self):
-        self._file = None
-        self._lines = None
+        """
+        Constructor to open file into a list for future use by getter method
+        """
+        self._file = None # stores the object, not the filename
+        self._lines = []
 
         # get path to the word_list.txt file
         path_to_here = os.path.abspath(__file__)
@@ -24,4 +27,7 @@ class Word_list:
             self._lines = self._file.read().splitlines()
     
     def get_random_word(self):
-        return(random.choice(self._lines))
+        """
+        simple getter to return a random word from the list
+        """
+        return random.choice(self._lines)
