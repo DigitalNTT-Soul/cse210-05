@@ -3,7 +3,14 @@ from game.output import Output
 from game.word_list import Word_list
 
 class Director:
+    """
+    Director class: Responsible for handling the main gameplay loop and passing information
+        and delegated tasks from module to module    
+    """
     def __init__(self):
+        """
+        Constructor to declare relevant attributes
+        """
         self._input = User_input()
         self._output = Output()
         self._word_list = Word_list()
@@ -13,6 +20,11 @@ class Director:
         self._play_new_round = True
 
     def start_game(self):
+        """
+        Main gameplay loop
+        Suitable for multiple rounds of gameplay, so that the user doesn't need to relaunch the
+            game software to play a new round
+        """
         while self._play_new_round:
             self._input.set_word(self._word_list.get_random_word())
             self._output.reset_displayed_letters()
