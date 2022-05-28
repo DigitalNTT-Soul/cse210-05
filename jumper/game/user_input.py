@@ -10,8 +10,12 @@ class User_input:
         _word (string)              : Five letter word passed in from director
 
     Methods:
-        get_input (self) :          Get the guessed letter from the user, makes sure it is a valid guess then stores it in guessed letter
-        update_lists (self) :       Updates and sorts the guessed_letters list, and clears guessed letter back to an empty string   
+        get_input (self) :                   Get the guessed letter from the user, makes sure it is a valid guess then stores it in guessed letter
+        update_lists (self) :                Updates and sorts the guessed_letters list, and clears guessed letter back to an empty string 
+        check_guess_in_word(self, letter):   Determines the number of times the provided letter occurs in the solution word 
+        def set_word(self,word):             Setter to change what the solution word itself is
+        prompt_play_again(self):             prompts the user whether they would like to play again, returning True or False
+        reset_guessed_letters(self):         Resets the list of guessed letters, to prepare for new rounds
     """
 
     def __init__(self):
@@ -74,7 +78,7 @@ class User_input:
 
     def set_word(self,word):
         """
-        Setter to change what thes olution word itself is.
+        Setter to change what the solution word itself is.
         """
         self._word = word
 
@@ -93,6 +97,6 @@ class User_input:
 
     def reset_guessed_letters(self):
         """
-        Resets the lsit of guessed letters, to prepare for new rounds
+        Resets the list of guessed letters, to prepare for new rounds
         """
         self.guessed_letters = []
